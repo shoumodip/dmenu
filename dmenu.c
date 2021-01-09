@@ -291,6 +291,13 @@ fuzzymatch(void)
 		free(fuzzymatches);
 	}
 	curr = sel = matches;
+
+	if(instant && matches && matches==matchend) {
+		puts(matches->text);
+		cleanup();
+		exit(0);
+	}
+
 	calcoffsets();
 }
 
@@ -820,7 +827,7 @@ main(int argc, char *argv[])
 		else if (!strcmp(argv[i], "-s")) { /* case-sensitive item matching */
 			fstrncmp = strncmp;
 			fstrstr = strstr;
-		} else if (!strcmp(argv[i], "-n")) /* instant select only match */
+		} else if (!strcmp(argv[i], "-n")) /* Don't instantly select only match */
 			instant = 0;
 		else if (i + 1 == argc)
 			usage();

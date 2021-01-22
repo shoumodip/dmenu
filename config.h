@@ -12,19 +12,18 @@ static unsigned int preselected = 0; /* Preselected item starting from 0. [-n] *
 
 /* Fonts */
 static const char *fonts[] = {
-	"Monospace:pixelsize=18"
+	"Monospace:pixelsize=15"
 };
 
 /* Colors */
-static const char col_gray1[] = "#161616";
-static const char col_gray2[] = "#ebdbb2";
-static const char col_green[] = "#4d6e4e";
+static const char col_fg[] = "#002b36";
+static const char col_bg[] = "#fdf6e3";
 
 static const char *colors[SchemeLast][2] = {
-	/*                  Fg         Bg       */
-	[SchemeNorm]    = { col_gray2, col_gray1 },
-	[SchemeSel]     = { col_gray1, col_green },
-	[SchemeOut]     = { col_gray2, col_gray1 },
+	/*                  Fg      Bg    */
+	[SchemeNorm]    = { col_fg, col_bg },
+	[SchemeSel]     = { col_bg, col_fg },
+	[SchemeOut]     = { col_fg, col_bg },
 };
 
 /*

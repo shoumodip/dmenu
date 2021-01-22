@@ -12,7 +12,7 @@ static unsigned int preselected = 0; /* Preselected item starting from 0. [-n] *
 
 /* Fonts */
 static const char *fonts[] = {
-	"Monospace:pixelsize=15"
+	"monospace:pixelsize=15"
 };
 
 /* Colors */

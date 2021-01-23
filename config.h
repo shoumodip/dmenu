@@ -16,14 +16,18 @@ static const char *fonts[] = {
 };
 
 /* Colors */
-static const char col_fg[] = "#002b36";
-static const char col_bg[] = "#fdf6e3";
+static const char col_fg[] = "#839496";
+static const char col_bg[] = "#002b36";
+static const char col_sl[] = "#073642";
+static const char col_hl[] = "#859900";
 
 static const char *colors[SchemeLast][2] = {
-	/*                  Fg      Bg    */
-	[SchemeNorm]    = { col_fg, col_bg },
-	[SchemeSel]     = { col_bg, col_fg },
-	[SchemeOut]     = { col_fg, col_bg },
+	/*                          Fg      Bg    */
+	[SchemeNorm]            = { col_fg, col_bg },
+	[SchemeSel]             = { col_fg, col_sl },
+	[SchemeOut]             = { col_fg, col_bg },
+	[SchemeSelHighlight]    = { col_hl, col_sl },
+	[SchemeNormHighlight]   = { col_hl, col_bg },
 };
 
 /*

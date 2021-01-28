@@ -16,10 +16,10 @@ static const char *fonts[] = {
 };
 
 /* Colors */
-static const char col_fg[] = "#839496";
-static const char col_bg[] = "#002b36";
-static const char col_sl[] = "#073642";
-static const char col_hl[] = "#859900";
+static const char col_fg[] = "#ebdbb2";
+static const char col_bg[] = "#161616";
+static const char col_sl[] = "#080808";
+static const char col_hl[] = "#98971a";
 
 static const char *colors[SchemeLast][2] = {
 	/*                          Fg      Bg    */

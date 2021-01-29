@@ -7,6 +7,6 @@ Dmenu is an efficient dynamic menu for X.
 ## Installation
 ```sh
 git clone git@github.com:shoumodip/dmenu
-make install
+make
 sudo make install
 ```

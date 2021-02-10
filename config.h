@@ -6,7 +6,7 @@ static int topbar  = 1; /* Place dmenu on top. [-b] option */
 static int fuzzy   = 1; /* Use fuzzy matching. [-F] option */
 
 static const char *fonts[] = {
-    "Monospace:pixelsize=18:antialias=true:autohint=true"
+    "Monospace:pixelsize=14:antialias=true:autohint=true"
 };
 
 static const char *colors[SchemeLast][2] = {

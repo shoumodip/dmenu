@@ -6,15 +6,15 @@ static int topbar  = 1; /* Place dmenu on top. [-b] option */
 static int fuzzy   = 1; /* Use fuzzy matching. [-F] option */
 
 static const char *fonts[] = {
-    "Monospace:pixelsize=14:antialias=true:autohint=true"
+    "Monospace:pixelsize=15:antialias=true:autohint=true"
 };
 
 static const char *colors[SchemeLast][2] = {
     /*               Fg         Bg       */
-    [SchemeNorm] = { "#ebdbb2", "#161616" },
-    [SchemeSel]  = { "#ebdbb2", "#484848" },
-    [SchemeOut]  = { "#ebdbb2", "#161616" },
-    [SchemeCur]  = { "#cc8c3c", "#161616" },
+    [SchemeNorm] = { "#bbbbbb", "#2b2b2b" },
+    [SchemeSel]  = { "#bbbbbb", "#113a5c" },
+    [SchemeOut]  = { "#bbbbbb", "#2b2b2b" },
+    [SchemeCur]  = { "#808080", "#2b2b2b" },
 };
 
 static const char *prompt = NULL; /* Prompt. [-p] option */
